@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snakes & Ladders</title>
+
+  <link rel="stylesheet" href="style.css" />
+ 
+
+
+
+
+  <script src="main.js"></script>
+
+  <script>
+    localStorage.setItem("player", 1);
+    localStorage.setItem("player1_count", 0);
+    localStorage.setItem("player2_count", 0);
+    localStorage.setItem("winflag", 0);
+  </script>
+</head>
+
+<body onload="init()">
+  <div class="container ">
+    <form>
+      <input type="button" class="box" id="btn100" value="100" />
+      <input type="button" class="box" id="btn99" value="99" />
+      <input type="button" class="box" id="btn98" value="98" />
+      <input type="button" class="box" id="btn97" value="97" />
+      <input type="button" class="box" id="btn96" value="96" />
+      <input type="button" class="box" id="btn95" value="95" />
+      <input type="button" class="box" id="btn94" value="94" />
+      <input type="button" class="box" id="btn93" value="93" />
+      <input type="button" class="box" id="btn92" value="92" />
+      <input type="button" class="box" id="btn91" value="91" />
+      <input type="button" class="box" id="btn81" value="81" />
+      <input type="button" class="box" id="btn82" value="82" />
+      <input type="button" class="box" id="btn83" value="83" />
+      <input type="button" class="box" id="btn84" value="84" />
+      <input type="button" class="box" id="btn85" value="85" />
+      <input type="button" class="box" id="btn86" value="86" />
+      <input type="button" class="box" id="btn87" value="87" />
+      <input type="button" class="box" id="btn88" value="88" />
+      <input type="button" class="box" id="btn89" value="89" />
+      <input type="button" class="box" id="btn90" value="90" />
+      <input type="button" class="box" id="btn80" value="80" />
+      <input type="button" class="box" id="btn79" value="79" />
+      <input type="button" class="box" id="btn78" value="78" />
+      <input type="button" class="box" id="btn77" value="77" />
+      <input type="button" class="box" id="btn76" value="76" />
+      <input type="button" class="box" id="btn75" value="75" />
+      <input type="button" class="box" id="btn74" value="74" />
+      <input type="button" class="box" id="btn73" value="73" />
+      <input type="button" class="box" id="btn72" value="72" />
+      <input type="button" class="box" id="btn71" value="71" />
+      <input type="button" class="box" id="btn61" value="61" />
+      <input type="button" class="box" id="btn62" value="62" />
+      <input type="button" class="box" id="btn63" value="63" />
+      <input type="button" class="box" id="btn64" value="64" />
+      <input type="button" class="box" id="btn65" value="65" />
+      <input type="button" class="box" id="btn66" value="66" />
+      <input type="button" class="box" id="btn67" value="67" />
+      <input type="button" class="box" id="btn68" value="68" />
+      <input type="button" class="box" id="btn69" value="69" />
+      <input type="button" class="box" id="btn70" value="70" />
+      <input type="button" class="box" id="btn60" value="60" />
+      <input type="button" class="box" id="btn59" value="59" />
+      <input type="button" class="box" id="btn58" value="58" />
+      <input type="button" class="box" id="btn57" value="57" />
+      <input type="button" class="box" id="btn56" value="56" />
+      <input type="button" class="box" id="btn55" value="55" />
+      <input type="button" class="box" id="btn54" value="54" />
+      <input type="button" class="box" id="btn53" value="53" />
+      <input type="button" class="box" id="btn52" value="52" />
+      <input type="button" class="box" id="btn51" value="51" />
+      <input type="button" class="box" id="btn41" value="41" />
+      <input type="button" class="box" id="btn42" value="42" />
+      <input type="button" class="box" id="btn43" value="43" />
+      <input type="button" class="box" id="btn44" value="44" />
+      <input type="button" class="box" id="btn45" value="45" />
+      <input type="button" class="box" id="btn46" value="46" />
+      <input type="button" class="box" id="btn47" value="47" />
+      <input type="button" class="box" id="btn48" value="48" />
+      <input type="button" class="box" id="btn49" value="49" />
+      <input type="button" class="box" id="btn50" value="50" />
+      <input type="button" class="box" id="btn40" value="40" />
+      <input type="button" class="box" id="btn39" value="39" />
+      <input type="button" class="box" id="btn38" value="38" />
+      <input type="button" class="box" id="btn37" value="37" />
+      <input type="button" class="box" id="btn36" value="36" />
+      <input type="button" class="box" id="btn35" value="35" />
+      <input type="button" class="box" id="btn34" value="34" />
+      <input type="button" class="box" id="btn33" value="33" />
+      <input type="button" class="box" id="btn32" value="32" />
+      <input type="button" class="box" id="btn31" value="31" />
+      <input type="button" class="box" id="btn21" value="21" />
+      <input type="button" class="box" id="btn22" value="22" />
+      <input type="button" class="box" id="btn23" value="23" />
+      <input type="button" class="box" id="btn24" value="24" />
+      <input type="button" class="box" id="btn25" value="25" />
+      <input type="button" class="box" id="btn26" value="26" />
+      <input type="button" class="box" id="btn27" value="27" />
+      <input type="button" class="box" id="btn28" value="28" />
+      <input type="button" class="box" id="btn29" value="29" />
+      <input type="button" class="box" id="btn30" value="30" />
+      <input type="button" class="box" id="btn20" value="20" />
+      <input type="button" class="box" id="btn19" value="19" />
+      <input type="button" class="box" id="btn18" value="18" />
+      <input type="button" class="box" id="btn17" value="17" />
+      <input type="button" class="box" id="btn16" value="16" />
+      <input type="button" class="box" id="btn15" value="15" />
+      <input type="button" class="box" id="btn14" value="14" />
+      <input type="button" class="box" id="btn13" value="13" />
+      <input type="button" class="box" id="btn12" value="12" />
+      <input type="button" class="box" id="btn11" value="11" />
+      <input type="button" class="box" id="btn1" value="1" />
+      <input type="button" class="box" id="btn2" value="2" />
+      <input type="button" class="box" id="btn3" value="3" />
+      <input type="button" class="box" id="btn4" value="4" />
+      <input type="button" class="box" id="btn5" value="5" />
+      <input type="button" class="box" id="btn6" value="6" />
+      <input type="button" class="box" id="btn7" value="7" />
+      <input type="button" class="box" id="btn8" value="8" />
+      <input type="button" class="box" id="btn9" value="9" />
+      <input type="button" class="box" id="btn10" value="10" />
+    </form>
+
+
+
+    <div id="d1"></div>
+    <input type="button" name="dice" class="btn" value="Roll" onclick="takeChance()" />
+  </div>
+</body>
+
+</html>
